@@ -4,61 +4,62 @@ header{
         src: url('../fonts/futurastd-light-webfont.ttf');
     }
     .top-header{
-        // .topnav{
-        // background-color: #4c4c4c;
-        // display: flex;
-        // align-items: center;
-        // font-size: 11px;
-        // justify-content: center;
-        // text-align: left;
-        // padding:5px;
-        // font-family: font-menu;
-        //     a,span{
-        //         color: #A2A2A2;
-        //         text-decoration: none;
-        //         padding: 10px 10px;
-        //     }
-        // // }
-        .topnav{
+            color: #A2A2A2;
             overflow: hidden;
             background-color:  #4c4c4c;
             font-family: font-menu;
+            padding: 10px 10px;
+
             @media (max-width: 480px){
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-                a{
-                    float: left;
+
+            .shipping, .return{
+                float: left;
+                margin-left: 20px;        
+                span,a,i{
                     color: #A2A2A2;
                     text-align: center;
-                    padding: 10px 10px;
                     text-decoration: none;
                     font-size: 12px;
+                }
+                span{
+                    display: none;
+                    @media (max-width: 480px){
+                        display: inline;
+                    }
+                }
+                i{
+                    display: inline;
+                    @media (max-width: 480px){
+                        display: none;
+                    }
+                }
+            }
+                
+            .top-right{
+                @media (max-width: 480px){
+                    display: none;
+                }
+                float: right;
+                text-transform: uppercase;
+                div{
+                    margin-left: 20px;
+                    // font-family: font-menu;
+                    float: left;
+                    a{
+                        color: #A2A2A2;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
                     
                 }
             }
+                
         }
-            
-        // .topnav{
-        //     overflow: hidden;
-        //     background-color: #4c4c4c;
-        //     a{
-        //         float: left;
-        //         color: #A2A2A2;
-        //         text-align: center;
-        //         padding: 10px 10px;
-        //         text-decoration: none;
-        //         font-size: 12px;
-        //         text-transform: uppercase;
-        //     }
-        //     a:hover{
-        //         background-color: white;
-        //     }
-        // }
-    
-              
-    // }
     .header-logo{
         background-color: #414042;
         color: white;
@@ -90,7 +91,7 @@ header{
                 text-align: center;
                 padding: 10px 10px;
                 text-decoration: none;
-                font-size: 12px;
+                font-size: 13px;
                 text-transform: uppercase;
                 font-family: font-menu;
             }
