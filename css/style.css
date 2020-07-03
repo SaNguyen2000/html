@@ -1,59 +1,68 @@
+body {
+  margin: 0px;
+}
 @font-face {
   font-family: font-menu;
-  src: url('../fonts/trajanpro-regular-webfont.woff');
+  src: url('../stay-wildy.ttf');
 }
-header .top-header {
+@font-face {
+  font-family: font-menu;
+  src: url('../fonts/futurastd-light-webfont.ttf');
+}
+header .top-header .topnav {
+  overflow: hidden;
   background-color: #4c4c4c;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  font-size: 11px;
-  justify-content: center;
-}
-header .top-header div {
-  text-align: left;
-  padding: 15px;
   font-family: font-menu;
 }
-header .top-header div a,
-header .top-header div span {
+@media (max-width: 480px) {
+  header .top-header .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+header .top-header .topnav a {
+  float: left;
   color: #A2A2A2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 12px;
 }
 header .header-logo {
   background-color: #414042;
   color: white;
   display: flex;
   align-items: center;
-  height: 68px;
-}
-header .header-logo .container .row {
+  padding: 15px;
   justify-content: center;
 }
-header .header-logo .container .row div {
-  padding: 10px;
-}
-header .header-logo .container .row div i {
+header .header-logo div i {
   font-size: 20px;
 }
-header .header-logo .container .row div img {
+header .header-logo div img {
   height: 29px;
 }
-header .main-menu {
+header .main-menu .topnav {
+  overflow: hidden;
   background-color: #efeae5;
-  height: 42px;
 }
-header .main-menu a {
+@media (max-width: 768px) {
+  header .main-menu .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+header .main-menu .topnav a {
   float: left;
-  display: block;
   color: #8b8b8b;
   text-align: center;
-  text-transform: uppercase;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 12px;
+  text-transform: uppercase;
   font-family: font-menu;
-}
-header .main-menu a :hover {
-  color: #414042;
 }
 footer .content-style {
   text-align: center;
@@ -99,60 +108,4 @@ footer .contact .icons-contact .icon-email {
   text-transform: uppercase;
   font-size: 13px;
   margin: 0 10px;
-}
-@font-face {
-  font-family: font-menu;
-  src: url('../fonts/trajanpro-regular-webfont.woff');
-}
-header .top-header {
-  background-color: #4c4c4c;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  font-size: 11px;
-  justify-content: center;
-}
-header .top-header div {
-  text-align: left;
-  padding: 15px;
-}
-header .top-header div a,
-header .top-header div span {
-  color: #A2A2A2;
-}
-header .header-logo {
-  background-color: #414042;
-  color: white;
-  display: flex;
-  align-items: center;
-  height: 68px;
-}
-header .header-logo .container .row {
-  justify-content: center;
-}
-header .header-logo .container .row div {
-  padding: 10px;
-}
-header .header-logo .container .row div i {
-  font-size: 20px;
-}
-header .header-logo .container .row div img {
-  height: 29px;
-}
-header .main-menu {
-  background-color: #efeae5;
-  height: 42px;
-}
-header .main-menu a {
-  float: left;
-  display: block;
-  color: #8b8b8b;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: font-menu;
-}
-header .main-menu a :hover {
-  color: #414042;
 }

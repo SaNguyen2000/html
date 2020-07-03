@@ -1,34 +1,38 @@
 
+body{
+    margin: 0px;
+}
 header{
     @font-face{
         font-family: font-menu;
         src: url('../fonts/trajanpro-regular-webfont.woff');
     }
     .top-header{
-        background-color: #4c4c4c;
+        .topnav{
+            background-color: #4c4c4c;
         display: flex;
         align-items: center;
-        height: 30px;
+        // height: 30px;
         font-size: 11px;
         justify-content: center;
-        div{
             text-align: left;
             padding:15px;
             font-family: font-menu;
             a,span{
                 color: #A2A2A2;
+                text-decoration: none;
 
             }
         }
-    
-              
+        
+   
     }
     .header-logo{
         background-color: #414042;
         color: white;
         display: flex;
         align-items: center;
-        height: 68px;
+        // height: 68px;
         .container{
             .row{
                 justify-content: center;
@@ -46,21 +50,37 @@ header{
         }
     }
     .main-menu{
-        background-color: #efeae5;
-        height: 42px;
-        a{
-            float: left;
-            display: block;
-            color: #8b8b8b;
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 12px;
-            font-family: font-menu;
-            :hover{
-                color: #414042;
+        .topnav{
+            overflow: hidden;
+            background-color: #efeae5;
+            a{
+                float: left;
+                color: #8b8b8b;
+                text-align: center;
+                padding: 10px 10px;
+                text-decoration: none;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            a:hover{
+                background-color: white;
             }
         }
+    //     background-color: #efeae5;
+    //     height: 42px;
+    //     a{
+    //         float: left;
+    //         display: block;
+    //         color: #8b8b8b;
+    //         text-align: center;
+    //         text-transform: uppercase;
+    //         text-decoration: none;
+    //         
+    //         font-family: font-menu;
+    //         :hover{
+    //             color: #414042;
+    //         }
+    //     }
     }
 }
 footer{
@@ -99,20 +119,3 @@ footer{
     }
 
 }
-
-@import 'layout/header';
-// @import 'layout/footer';
-// @import 'layout/sidebar';
-// @import 'layout/forms';
-
-// @import 'components/buttons';
-// // @import 'components/carousel';
-// @import 'components/slider';
-
-// @import 'pages/home';
-// @import 'pages/about';
-// @import 'pages/contact';
-
-// @import 'themes/theme';
-// @import 'themes/admin';
-
