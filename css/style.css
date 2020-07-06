@@ -78,19 +78,82 @@ header .top-header .top-right div a {
   text-decoration: none;
   font-size: 12px;
 }
+@media (max-width: 768px) {
+  header .top-header .top-right div .content-icon {
+    display: none;
+  }
+}
 header .header-logo {
   background-color: #414042;
   color: white;
+  padding: 15px 15px;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 15px;
-  justify-content: center;
 }
-header .header-logo div i {
-  font-size: 20px;
+header .header-logo .menu-mobile i,
+header .header-logo .search-mmobile i {
+  font-size: 16px;
+  margin-right: 10px;
 }
-header .header-logo div img {
-  height: 29px;
+header .header-logo .search-mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  header .header-logo .search-mobile {
+    display: inline;
+  }
+}
+header .header-logo .img-logo img {
+  height: 27px;
+}
+header .header-logo .right-logo .right-logo-mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  header .header-logo .right-logo .right-logo-mobile {
+    display: inline;
+  }
+}
+header .header-logo .right-logo .right-logo-mobile i {
+  font-size: 16px;
+  margin-left: 10px;
+}
+header .header-logo .right-logo .search-tablet-desktop i {
+  color: #A2A2A2;
+}
+@media (max-width: 768px) {
+  header .header-logo .right-logo .search-tablet-desktop i {
+    display: inline;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  header .header-logo .right-logo .search-tablet-desktop i {
+    display: none;
+  }
+}
+header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+  text-align: right;
+  background-color: #414042;
+  font-style: italic;
+  font-family: font-menu;
+  border: none;
+  display: inline;
+}
+@media (max-width: 480px) {
+  header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+    border-bottom: solid 1px;
+    border-color: #A2A2A2;
+    text-align: left;
+  }
+}
+header .header-logo div:nth-child(3) {
+  margin: 0 auto;
 }
 header .main-menu .topnav {
   overflow: hidden;
@@ -112,6 +175,9 @@ header .main-menu .topnav a {
   font-size: 13px;
   text-transform: uppercase;
   font-family: font-menu;
+}
+header .main-menu .topnav a:hover {
+  text-decoration: underline;
 }
 footer .content-style {
   text-align: center;

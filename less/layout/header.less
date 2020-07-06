@@ -3,6 +3,7 @@ header{
         font-family: font-menu;
         src: url('../fonts/futurastd-light-webfont.ttf');
     }
+    
     .top-header{
             color: #A2A2A2;
             overflow: hidden;
@@ -14,6 +15,7 @@ header{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
             }
 
             .shipping, .return{
@@ -55,27 +57,101 @@ header{
                         text-decoration: none;
                         font-size: 12px;
                     }
+                    .content-icon{
+                        @media (max-width: 768px){
+                            display: none;
+                        }
+                    }
                     
                 }
+                
             }
                 
-        }
+    }
+
+
     .header-logo{
         background-color: #414042;
         color: white;
-        display: flex;
-        align-items: center;
-        padding: 15px;
-        justify-content: center;
-        div{
-            i{
-                font-size: 20px;
+        padding: 15px 15px;
+        overflow: hidden;
+        // @media (max-width: 425px){
+            display: flex;
+            align-items: center;
+            
+            .menu-mobile,.search-mmobile{
+                // float: left;
+                i{
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+                
             }
-            img{
-                height: 29px;
+            .search-mobile{
+                display: none;
+                @media (max-width: 480px){
+                    display: inline;
+                }
             }
-        }
+            .img-logo{
+                img{
+                    height: 27px;
+                }
+               
+            }
+
+            .right-logo{
+                .right-logo-mobile{
+                    display: none;
+                    @media (max-width: 480px){
+                        display: inline;
+                    }
+                    i{
+                        font-size: 16px;
+                        margin-left: 10px;
+                    }
+                }
+                .search-tablet-desktop{
+                    i{
+                        @media (max-width:768px) {
+                            display: inline;
+                            @media (max-width: 480px){
+                                display: none;
+                            }
+                        }
+                        color: #A2A2A2;
+                    }
+                    .search-tablet{
+                        
+                        text-align: right;
+                        background-color: #414042;
+                        font-style: italic;
+                        font-family: font-menu;
+                        border: none;
+                        display: inline;
+                        @media(max-width: 480px){
+                            display: none;
+                        }
+                        @media(min-width: 1024px){
+                            border-bottom: solid 1px;
+                            border-color: #A2A2A2;
+                            text-align: left;
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+            div:nth-child(3){
+                margin: 0 auto;
+            }
+        // }
+        
+            
     }
+    
+
     .main-menu{
         .topnav{
             overflow: hidden;
@@ -95,9 +171,9 @@ header{
                 text-transform: uppercase;
                 font-family: font-menu;
             }
-            // a:hover{
-            //     background-color: white;
-            // }
+            a:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
