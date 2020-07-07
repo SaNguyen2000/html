@@ -83,26 +83,68 @@ header .top-header .top-right div a {
     display: none;
   }
 }
+header .top-header .top-right .heart,
+header .top-header .top-right .bag {
+  padding-left: 10px;
+  border-left: solid 1px ;
+}
 header .header-logo {
   background-color: #414042;
   color: white;
-  padding: 15px 15px;
-  overflow: hidden;
+  padding: 0px 15px;
   display: flex;
   align-items: center;
+  justify-items: center;
 }
-header .header-logo .menu-mobile i,
-header .header-logo .search-mmobile i {
+header .header-logo .left-logo {
+  display: flex;
+}
+header .header-logo .left-logo .menu-mobile i,
+header .header-logo .left-logo .search-mobile i {
   font-size: 16px;
   margin-right: 10px;
 }
-header .header-logo .search-mobile {
+header .header-logo .left-logo .menu-mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  header .header-logo .left-logo .menu-mobile {
+    display: inline;
+  }
+}
+header .header-logo .left-logo .search-mobile {
   display: none;
 }
 @media (max-width: 480px) {
-  header .header-logo .search-mobile {
+  header .header-logo .left-logo .search-mobile {
     display: inline;
   }
+}
+header .header-logo .left-logo .menu-desktop .nav-menu-desktop {
+  display: inline;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: -15px 0px;
+}
+@media (max-width: 900px) {
+  header .header-logo .left-logo .menu-desktop .nav-menu-desktop {
+    display: none;
+  }
+}
+header .header-logo .left-logo .menu-desktop .nav-menu-desktop a {
+  float: left;
+  color: #a2a2a2;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: font-menu;
+}
+header .header-logo .img-logo {
+  margin: 0 auto;
 }
 header .header-logo .img-logo img {
   height: 27px;
@@ -119,20 +161,20 @@ header .header-logo .right-logo .right-logo-mobile i {
   font-size: 16px;
   margin-left: 10px;
 }
-header .header-logo .right-logo .search-tablet-desktop i {
+header .header-logo .right-logo .search-tablet i {
   color: #A2A2A2;
 }
 @media (max-width: 768px) {
-  header .header-logo .right-logo .search-tablet-desktop i {
+  header .header-logo .right-logo .search-tablet i {
     display: inline;
   }
 }
 @media (max-width: 768px) and (max-width: 480px) {
-  header .header-logo .right-logo .search-tablet-desktop i {
+  header .header-logo .right-logo .search-tablet i {
     display: none;
   }
 }
-header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+header .header-logo .right-logo .search-tablet input {
   text-align: right;
   background-color: #414042;
   font-style: italic;
@@ -141,19 +183,16 @@ header .header-logo .right-logo .search-tablet-desktop .search-tablet {
   display: inline;
 }
 @media (max-width: 480px) {
-  header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+  header .header-logo .right-logo .search-tablet input {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  header .header-logo .right-logo .search-tablet-desktop .search-tablet {
+  header .header-logo .right-logo .search-tablet input {
     border-bottom: solid 1px;
     border-color: #A2A2A2;
     text-align: left;
   }
-}
-header .header-logo div:nth-child(3) {
-  margin: 0 auto;
 }
 header .main-menu .topnav {
   overflow: hidden;
