@@ -1,36 +1,71 @@
-footer{
-    .content-style{
-        text-align: center;
-        color: #414042;
-        text-transform: uppercase;
-
+footer {
+    hr{
+        border:1px solid #f3f3f3 ;
     }
-    .icon-style{
+    
+    
+    @font-face {
+        font-family: font-footer;
+        src: url('../fonts/OpenSans.woff');
+    }
+    color: #838283;
+    font-family: font-footer;
+    .content-style {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .icon-style {
         float: left;
         text-align: center;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 11pt;
         margin: 0 10px;
     }
-    .contact{
+    .contact {
         justify-content: center;
-        .contact-content{
+        .contact-content {
             .content-style();
+            color: #414042;
+            font-size: 11pt;
         }
-        .icons-contact{
+        .icons-contact {
+            padding-top: 20px;
             display: flex;
             justify-content: center;
-            .icon-chat{
-                .icon-style();
-            }
-            .icon-call{
-                .icon-style();
-            }
-            .icon-email{
+            font-size: 11pt;
+            .icon-chat,
+            .icon-call,
+            .icon-email {
                 .icon-style();
             }
         }
-
+        .infor-contact {
+            text-align: center;
+            font-size: 11pt;
+            color: #a1a1a1;
+        }
+        .subscribe{
+            background-color: #f3f3f3;
+            text-align: center;
+            p{
+                text-align: center;
+                font-size: 11pt;
+                color:#414042;
+                font-family: font-footer;
+                padding: 10px 10px;    
+            }
+            .email-subscribe{
+                padding: 10px 10px; 
+                border: none;   
+                font-family: font-footer;
+                width: 55%;
+            }
+            button{  
+                padding: 10px 10px; 
+                width: 230;
+                border-radius: 0px;
+                text-transform: uppercase;
+            }
+        }
     }
-
-}
+}   
