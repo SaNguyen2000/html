@@ -382,6 +382,7 @@ footer .contact .infor-contact {
 footer .contact .subscribe {
   background-color: #f3f3f3;
   text-align: center;
+  padding-bottom: 10px;
 }
 footer .contact .subscribe p {
   text-align: center;
@@ -401,4 +402,17 @@ footer .contact .subscribe button {
   width: 230;
   border-radius: 0px;
   text-transform: uppercase;
+}
+footer .box-content {
+  background-color: #414042;
+  text-transform: uppercase;
+  font-family: font-footer;
+  padding: 10px;
+}
+footer .box-content .content {
+  padding: 10px 10px;
+  border-bottom: solid 1px #4c4c4c;
+}
+footer .box-content .content i {
+  float: right;
 }
