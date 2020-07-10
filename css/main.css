@@ -408,6 +408,8 @@ footer .box-content {
   text-transform: uppercase;
   font-family: font-footer;
   padding: 10px;
+  color: #fff;
+  font-size: 14px;
 }
 footer .box-content .content {
   padding: 10px 10px;
@@ -415,4 +417,50 @@ footer .box-content .content {
 }
 footer .box-content .content i {
   float: right;
+}
+footer .review {
+  background-color: #414042;
+  font-family: font-footer;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+}
+footer .review div {
+  margin-top: 10px;
+}
+footer .review .review-title {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+footer .review .review-stars {
+  text-align: center;
+}
+footer .review .review-content {
+  color: #aaaaaa;
+}
+footer .review .review-content span {
+  color: white;
+}
+footer .review .more-review span {
+  margin: 20px;
+}
+footer .review a {
+  text-decoration: none;
+  color: #d9b67c;
+}
+footer .country-footer {
+  margin: 0px 0px;
+  background-color: #414042;
+  font-family: font-footer;
+}
+footer .country-footer .country-select {
+  text-transform: uppercase;
+  text-align: center;
+}
+footer .country-footer .country-region {
+  width: 71px;
+  height: 40px;
+  background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/country_region.png) no-repeat;
+  float: left;
 }

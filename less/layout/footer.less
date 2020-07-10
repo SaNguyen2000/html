@@ -1,17 +1,22 @@
 footer {
+
     hr{
         border:1px solid #f3f3f3 ;
     }
+
     @font-face {
         font-family: font-footer,;
         src: url('../fonts/OpenSans.woff');
     }
+
     color: #838283;
     font-family: font-footer;
+
     .content-style {
         text-align: center;
         text-transform: uppercase;
     }
+
     .icon-style {
         float: left;
         text-align: center;
@@ -19,13 +24,18 @@ footer {
         font-size: 11pt;
         margin: 0 10px;
     }
+
+
+
     .contact {
         justify-content: center;
+
         .contact-content {
             .content-style();
             color: #414042;
             font-size: 11pt;
         }
+
         .icons-contact {
             padding-top: 20px;
             display: flex;
@@ -37,11 +47,13 @@ footer {
                 .icon-style();
             }
         }
+
         .infor-contact {
             text-align: center;
             font-size: 11pt;
             color: #a1a1a1;
         }
+
         .subscribe{
             background-color: #f3f3f3;
             text-align: center;
@@ -68,13 +80,15 @@ footer {
         }
     }
 
-    .box-content{
 
+
+    .box-content{
         background-color: #414042;
         text-transform: uppercase;
         font-family: font-footer;
         padding: 10px;
-
+        color: #fff;
+        font-size: 14px;
         .content{
             padding: 10px 10px;;
             border-bottom: solid 1px #4c4c4c;
@@ -83,7 +97,59 @@ footer {
             }
             
         }
-
-
     }
+
+    .review{
+        div{
+            margin-top: 10px;
+        }
+        padding: 10px;
+        background-color: #414042;
+        font-family: font-footer;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        font-size: 11px;
+        .review-title{
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        .review-stars{
+            text-align: center;
+        }
+        .review-content{
+            span{
+                color: white;
+            }
+            color: #aaaaaa;
+            
+        }
+        .more-review{
+            span{
+                margin: 20px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #d9b67c;
+        }
+    }
+    .country-footer {
+        margin: 0px 0px;
+        background-color: #414042;
+        font-family: font-footer;
+        .country-select{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .country-region{
+            width: 71px;
+            height: 40px;
+            background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/country_region.png) no-repeat;
+            float: left;
+        }
+    }
+
+    
+    
 }   
