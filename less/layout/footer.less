@@ -71,11 +71,10 @@ footer {
                 padding: 10px 10px; 
                 border: none;   
                 font-family: font-footer;
-                width: 55%;
+                width: 50%;
             }
             button{  
                 padding: 10px 10px; 
-                width: 230;
                 border-radius: 0px;
                 text-transform: uppercase;
             }
@@ -137,7 +136,7 @@ footer {
             color: #d9b67c;
         }
     }
-
+    
     .country-footer {
         .clear{
             width: 20%;
@@ -149,20 +148,33 @@ footer {
         padding: 10px;
         
         .country-select{
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 13px;
+            span{
+                width: 45%;
+            }
+            height: 50px;
+            .country-content{
+                text-transform: uppercase;
+                float: left;
+                text-align: right;
+                font-size: 10px;
+                padding: 10px;
+            }
+            .country-region{
+                img{
+                    padding: 10px;
+                    width: 70px;
+                    height: 40px;
+                    float: left;
+                }
+                // background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/country_region.png) no-repeat;
+                background-color: #414042;
+                float: right;
+            }
         }
         // img{
             // float: right;
         // }
-        // .country-region{
-        //     width: 71px;
-        //     height: 40px;
-        //     background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/country_region.png) no-repeat;
-        //     background-color: #414042;
-        //     float: left;
-        // }
+        
     }
 
 }   
