@@ -372,59 +372,59 @@ footer .icon-style {
   font-size: 11pt;
   margin: 0 10px;
 }
-footer .contact {
+footer .footer-mobile-tablet .contact {
   justify-content: center;
 }
-footer .contact .contact-content {
+footer .footer-mobile-tablet .contact .contact-content {
   text-align: center;
   text-transform: uppercase;
   color: #414042;
   font-size: 11pt;
 }
-footer .contact .icons-contact {
+footer .footer-mobile-tablet .contact .icons-contact {
   padding-top: 20px;
   display: flex;
   justify-content: center;
   font-size: 11pt;
 }
-footer .contact .icons-contact .icon-chat,
-footer .contact .icons-contact .icon-call,
-footer .contact .icons-contact .icon-email {
+footer .footer-mobile-tablet .contact .icons-contact .icon-chat,
+footer .footer-mobile-tablet .contact .icons-contact .icon-call,
+footer .footer-mobile-tablet .contact .icons-contact .icon-email {
   float: left;
   text-align: center;
   text-transform: uppercase;
   font-size: 11pt;
   margin: 0 10px;
 }
-footer .contact .infor-contact {
+footer .footer-mobile-tablet .contact .infor-contact {
   text-align: center;
   font-size: 11pt;
   color: #a1a1a1;
 }
-footer .contact .subscribe {
+footer .footer-mobile-tablet .contact .subscribe {
   background-color: #f3f3f3;
   text-align: center;
   padding-bottom: 10px;
 }
-footer .contact .subscribe p {
+footer .footer-mobile-tablet .contact .subscribe p {
   text-align: center;
   font-size: 11pt;
   color: #414042;
   font-family: font-footer;
   padding: 10px 10px;
 }
-footer .contact .subscribe .email-subscribe {
+footer .footer-mobile-tablet .contact .subscribe .email-subscribe {
   padding: 10px 10px;
   border: none;
   font-family: font-footer;
   width: 50%;
 }
-footer .contact .subscribe button {
+footer .footer-mobile-tablet .contact .subscribe button {
   padding: 10px 10px;
   border-radius: 0px;
   text-transform: uppercase;
 }
-footer .box-content {
+footer .footer-mobile-tablet .box-content {
   background-color: #414042;
   text-transform: uppercase;
   font-family: font-footer;
@@ -432,14 +432,30 @@ footer .box-content {
   color: #fff;
   font-size: 14px;
 }
-footer .box-content .content {
+footer .footer-mobile-tablet .box-content .content {
   padding: 10px 10px;
   border-bottom: solid 1px #4c4c4c;
 }
-footer .box-content .content i {
+footer .footer-mobile-tablet .box-content .content i {
   float: right;
 }
-footer .review {
+@media (min-width: 768px) {
+  footer .footer-mobile-tablet .review,
+  footer .footer-mobile-tablet .bottom-footer,
+  footer .footer-mobile-tablet .copyright-footer {
+    display: none;
+  }
+}
+@media (min-width: 425px) {
+  footer .footer-mobile-tablet .review div,
+  footer .footer-mobile-tablet .bottom-footer div,
+  footer .footer-mobile-tablet .copyright-footer div {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+footer .footer-mobile-tablet .review {
   padding: 10px;
   background-color: #414042;
   font-family: font-footer;
@@ -447,63 +463,80 @@ footer .review {
   text-align: center;
   font-size: 11px;
 }
-footer .review div {
+footer .footer-mobile-tablet .review div {
   margin-top: 10px;
 }
-footer .review .review-title {
+footer .footer-mobile-tablet .review .review-title {
   font-size: 13px;
   text-transform: uppercase;
 }
-footer .review .review-stars {
+footer .footer-mobile-tablet .review .review-stars {
   text-align: center;
 }
-footer .review .review-content {
+footer .footer-mobile-tablet .review .review-content {
   color: #aaaaaa;
 }
-footer .review .review-content span {
+footer .footer-mobile-tablet .review .review-content span {
   color: white;
 }
-footer .review .more-review {
+footer .footer-mobile-tablet .review .more-review {
   color: #aaaaaa;
 }
-footer .review .more-review span {
+footer .footer-mobile-tablet .review .more-review span {
   margin: 20px;
   color: white;
 }
-footer .review a {
+footer .footer-mobile-tablet .review a {
   text-decoration: none;
   color: #d9b67c;
 }
-footer .country-footer {
+footer .footer-mobile-tablet .bottom-footer {
   background-color: #414042;
   padding: 10px;
 }
-footer .country-footer .clear {
-  width: 20%;
+footer .footer-mobile-tablet .bottom-footer .clear {
+  width: 100px;
   height: 1px;
   background-color: #4c4c4c;
   margin: 10px auto;
 }
-footer .country-footer .country-select {
+footer .footer-mobile-tablet .bottom-footer .country-select {
   height: 50px;
 }
-footer .country-footer .country-select span {
+footer .footer-mobile-tablet .bottom-footer .country-select span {
   width: 45%;
 }
-footer .country-footer .country-select .country-content {
+footer .footer-mobile-tablet .bottom-footer .country-select .country-content {
   text-transform: uppercase;
   float: left;
   text-align: right;
   font-size: 10px;
   padding: 10px;
 }
-footer .country-footer .country-select .country-region {
+footer .footer-mobile-tablet .bottom-footer .country-select .country-region {
   background-color: #414042;
   float: right;
 }
-footer .country-footer .country-select .country-region img {
+footer .footer-mobile-tablet .bottom-footer .country-select .country-region img {
   padding: 10px;
   width: 70px;
   height: 40px;
   float: left;
+}
+footer .footer-mobile-tablet .bottom-footer .social-icons,
+footer .footer-mobile-tablet .bottom-footer .payment-method {
+  text-align: center;
+}
+footer .footer-mobile-tablet .bottom-footer .social-icons i,
+footer .footer-mobile-tablet .bottom-footer .payment-method i {
+  margin: 10px;
+  color: white;
+}
+footer .footer-mobile-tablet .copyright-footer {
+  padding: 10px;
+  background-color: #303030;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: font-footer;
+  font-size: 10px;
 }

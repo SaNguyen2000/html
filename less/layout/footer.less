@@ -1,5 +1,6 @@
 footer {
 
+
     hr{
         border:1px solid #f3f3f3 ;
         margin: 0px;
@@ -24,157 +25,187 @@ footer {
         text-align: center;
         text-transform: uppercase;
         font-size: 11pt;
-        margin: 0 10px;
+        margin: 0 10px; 
     }
 
 
-
-    .contact {
-        justify-content: center;
-
-        .contact-content {
-            .content-style();
-            color: #414042;
-            font-size: 11pt;
-        }
-
-        .icons-contact {
-            padding-top: 20px;
-            display: flex;
+    .footer-mobile-tablet{
+        .contact {
             justify-content: center;
-            font-size: 11pt;
-            .icon-chat,
-            .icon-call,
-            .icon-email {
-                .icon-style();
+    
+            .contact-content {
+                .content-style();
+                color: #414042;
+                font-size: 11pt;
             }
-        }
-
-        .infor-contact {
-            text-align: center;
-            font-size: 11pt;
-            color: #a1a1a1;
-        }
-
-        .subscribe{
-            background-color: #f3f3f3;
-            text-align: center;
-            padding-bottom: 10px;
-            p{
+    
+            .icons-contact {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+                font-size: 11pt;
+                .icon-chat,
+                .icon-call,
+                .icon-email {
+                    .icon-style();
+                }
+            }
+    
+            .infor-contact {
                 text-align: center;
                 font-size: 11pt;
-                color:#414042;
-                font-family: font-footer;
-                padding: 10px 10px;    
+                color: #a1a1a1;
             }
-            .email-subscribe{
-                padding: 10px 10px; 
-                border: none;   
-                font-family: font-footer;
-                width: 50%;
+    
+            .subscribe{
+                background-color: #f3f3f3;
+                text-align: center;
+                padding-bottom: 10px;
+                p{
+                    text-align: center;
+                    font-size: 11pt;
+                    color:#414042;
+                    font-family: font-footer;
+                    padding: 10px 10px;    
+                }
+                .email-subscribe{
+                    padding: 10px 10px; 
+                    border: none;   
+                    font-family: font-footer;
+                    width: 50%;
+                }
+                button{  
+                    padding: 10px 10px; 
+                    border-radius: 0px;
+                    text-transform: uppercase;
+                }
             }
-            button{  
-                padding: 10px 10px; 
-                border-radius: 0px;
+        }
+    
+    
+    
+        .box-content{
+            background-color: #414042;
+            text-transform: uppercase;
+            font-family: font-footer;
+            padding: 10px;
+            color: #fff;
+            font-size: 14px;
+            .content{
+                padding: 10px 10px;;
+                border-bottom: solid 1px #4c4c4c;
+                i{
+                    float: right;
+                }
+                
+            }
+        }
+        .review, .bottom-footer, .copyright-footer{
+            @media (min-width:768px){
+                display: none;
+            }
+            @media (min-width: 425px){
+                div{
+                    width: 350px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+            
+            // display: inline;
+            // @media (min-width:768px){
+            //     display: none;
+            // }
+            
+        }
+        .review{
+            div{
+                margin-top: 10px;
+            }
+            padding: 10px;
+            background-color: #414042;
+            font-family: font-footer;
+            color: #fff;
+            text-align: center;
+            font-size: 11px;
+            .review-title{
+                font-size: 13px;
                 text-transform: uppercase;
             }
+            .review-stars{
+                text-align: center;
+            }
+            .review-content{
+                span{
+                    color: white;
+                }
+                color: #aaaaaa;
+                
+            }
+            .more-review{
+                color:  #aaaaaa;
+                span{
+                    margin: 20px;
+                    color: white;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #d9b67c;
+            }
         }
-    }
-
-
-
-    .box-content{
-        background-color: #414042;
-        text-transform: uppercase;
-        font-family: font-footer;
-        padding: 10px;
-        color: #fff;
-        font-size: 14px;
-        .content{
-            padding: 10px 10px;;
-            border-bottom: solid 1px #4c4c4c;
-            i{
-                float: right;
+        
+        .bottom-footer {
+            .clear{
+                width: 100px;
+                height: 1px;
+                background-color: #4c4c4c;
+                margin: 10px auto;
+            }
+            background-color: #414042;
+            padding: 10px;
+            
+            .country-select{
+                span{
+                    width: 45%;
+                }
+                height: 50px;
+                .country-content{
+                    text-transform: uppercase;
+                    float: left;
+                    text-align: right;
+                    font-size: 10px;
+                    padding: 10px;
+                }
+                .country-region{
+                    img{
+                        padding: 10px;
+                        width: 70px;
+                        height: 40px;
+                        float: left;
+                    }
+                    background-color: #414042;
+                    float: right;
+                }
+            }
+            .social-icons, .payment-method{
+                text-align: center;
+                i{
+                    margin: 10px;
+                    color: white;
+                }
             }
             
         }
-    }
-
-    .review{
-        div{
-            margin-top: 10px;
-        }
-        padding: 10px;
-        background-color: #414042;
-        font-family: font-footer;
-        color: #fff;
-        text-align: center;
-        font-size: 11px;
-        .review-title{
-            font-size: 13px;
-            text-transform: uppercase;
-        }
-        .review-stars{
+        .copyright-footer{
+            padding: 10px;
+            background-color: #303030;
             text-align: center;
-        }
-        .review-content{
-            span{
-                color: white;
-            }
-            color: #aaaaaa;
-            
-        }
-        .more-review{
-            color:  #aaaaaa;
-            span{
-                margin: 20px;
-                color: white;
-            }
-        }
-        a{
-            text-decoration: none;
-            color: #d9b67c;
+            text-transform: uppercase;
+            font-family: font-footer;
+            font-size: 10px;
         }
     }
     
-    .country-footer {
-        .clear{
-            width: 20%;
-            height: 1px;
-            background-color: #4c4c4c;
-            margin: 10px auto;
-        }
-        background-color: #414042;
-        padding: 10px;
-        
-        .country-select{
-            span{
-                width: 45%;
-            }
-            height: 50px;
-            .country-content{
-                text-transform: uppercase;
-                float: left;
-                text-align: right;
-                font-size: 10px;
-                padding: 10px;
-            }
-            .country-region{
-                img{
-                    padding: 10px;
-                    width: 70px;
-                    height: 40px;
-                    float: left;
-                }
-                // background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/country_region.png) no-repeat;
-                background-color: #414042;
-                float: right;
-            }
-        }
-        // img{
-            // float: right;
-        // }
-        
-    }
 
 }   
