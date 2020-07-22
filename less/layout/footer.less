@@ -1,5 +1,13 @@
 footer {
 
+    .copyright-footer{
+        padding: 10px;
+        background-color: #303030;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: font-footer;
+        font-size: 10px;
+    }
 
     hr{
         border:1px solid #f3f3f3 ;
@@ -8,7 +16,7 @@ footer {
     }
 
     @font-face {
-        font-family: font-footer,;
+        font-family: font-footer;
         src: url('../fonts/OpenSans.woff');
     }
 
@@ -30,6 +38,9 @@ footer {
 
 
     .footer-mobile-tablet{
+        @media (min-width:1024px){
+            display: none;
+        }
         .contact {
             justify-content: center;
     
@@ -101,9 +112,6 @@ footer {
             }
         }
         .review, .bottom-footer, .copyright-footer{
-            @media (min-width:768px){
-                display: none;
-            }
             @media (min-width: 425px){
                 div{
                     width: 350px;
@@ -197,15 +205,120 @@ footer {
             }
             
         }
-        .copyright-footer{
-            padding: 10px;
-            background-color: #303030;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: font-footer;
-            font-size: 10px;
-        }
+        
     }
+
+
+
+
+
+
+
+
+
+
+
+    .footer-desktop{
+        // font-family: font-footer;
+        display: none;
+        @media (min-width:1024px){
+            display: inline;
+        }
+        div{
+            background-color: #414042;
+            font-size: 13px;
+        }
+        .clear{
+                width: 1px;
+                height: 50px;
+                background-color: #4c4c4c;
+                margin: auto  30px;
+        }
+        .top-footer{
+            padding: 20px 20px;
+            font-family: font-footer;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            .social-icons,.country-select{
+                width: 25%;
+                text-align: left;
+                text-transform: uppercase;
+                // padding: 10px;
+                i{
+                    color: white;
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+            }
+            .subscribe{
+                text-align: left;
+                input{
+                    color: #aaa;
+                    background-color: #2d2d2e;
+                    border: 1px solid #222;
+                    height: 40px;
+                    width: 70%;
+                }
+                button{
+                    background-color: transparent;
+                    border: 1px solid #a2a2a2;
+                    height: 40px;
+                    width: 25%;
+                    color: #a2a2a2;
+                }
+            }
+            .country-select{
+                width: 25%;
+                float: right;
+                text-align: left;
+                img{
+                    vertical-align: middle;
+                }
+                span{
+                    padding-left:15px ;
+                }
+            }
+        }
+        .review-title{
+            text-transform: uppercase;
+            color: white;
+            font-size: 14px;
+        }
+        .review-footer{
+            display: flex;
+            .review-detail,.more-riew{
+                width: 25%;
+                margin: 10px;
+            }
+            .review-detail{
+                .review-stars{
+                    i{
+                        color: white;
+                    }
+                }
+                
+            }
+        }
+        .content-footer{
+            display: flex;
+            div{
+                width: 25%;
+                margin: 10px;
+            }
+        }
+        .payment-method{
+            text-align: center;
+            color: white;
+            padding: 10px;
+            i{
+                margin: 10px;
+            }
+        }
+        
+
+    }
+
     
 
 }   
