@@ -11,8 +11,6 @@ footer {
 
     hr{
         border:1px solid #f3f3f3 ;
-        margin: 0px;
-        padding: 0px;
     }
 
     @font-face {
@@ -219,11 +217,13 @@ footer {
 
 
     .footer-desktop{
-        // font-family: font-footer;
+        font-family: font-footer;
+        background-color:#414042 ;
         display: none;
         @media (min-width:1024px){
             display: inline;
         }
+        
         div{
             background-color: #414042;
             font-size: 13px;
@@ -235,10 +235,11 @@ footer {
                 margin: auto  30px;
         }
         .top-footer{
-            padding: 20px 20px;
+            padding-top:10px;
+            padding-bottom: 20px;
+            .container{
             font-family: font-footer;
             display: flex;
-            // justify-content: center;
             align-items: center;
             .social-icons,.country-select{
                 width: 25%;
@@ -246,7 +247,7 @@ footer {
                 text-transform: uppercase;
                 // padding: 10px;
                 i{
-                    color: white;
+                    color: #fff;
                     font-size: 16px;
                     margin-right: 10px;
                 }
@@ -269,43 +270,102 @@ footer {
                 }
             }
             .country-select{
-                width: 25%;
+                width: 30%;
                 float: right;
                 text-align: left;
                 img{
                     vertical-align: middle;
                 }
                 span{
-                    padding-left:15px ;
+                    padding-left:15px;
+                    font-size: 10px;
                 }
             }
+            }
+            
+
+
         }
         .review-title{
             text-transform: uppercase;
             color: white;
             font-size: 14px;
+            padding: 10px 0px;
         }
+
+
         .review-footer{
-            display: flex;
-            .review-detail,.more-riew{
-                width: 25%;
-                margin: 10px;
-            }
-            .review-detail{
-                .review-stars{
-                    i{
-                        color: white;
+            padding-top:10px;
+            padding-bottom: 20px;
+            .container{
+                display: flex;
+                .review-detail,.more-review{
+                    width: 25%;
+                    margin-right: 15px;
+                    // padding-right: 10px;
+                }
+                .review-detail{
+                    text-align: left;
+                    // padding-right: 15px;
+                    .review-stars{
+                        i{
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+                    .review-content{
+                        font-size: 12px;
+                        span{
+                            color: white;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #d9b67c;
+                        }
                     }
                 }
-                
+                .more-review{
+                    font-size: 12px;
+                        span{
+                            color: white;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #d9b67c;
+                        }
+                }  
             }
         }
+
         .content-footer{
-            display: flex;
-            div{
-                width: 25%;
-                margin: 10px;
+            padding-top:10px;
+            padding-bottom: 20px;
+            .container{
+                display: flex;
+                .content{
+                    width: 25%;
+                    margin-right: 15px;
+                    // margin: 10px;
+                    .title-content,.contact{
+                        text-transform: uppercase;
+                        color: white;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+                    li{
+                        list-style: none;
+                        margin-bottom: 10px;
+                        font-size: 10px;
+                        color: #aaaaaa;
+                        span{
+                            color: #727272;
+                        }
+                    }
+                    }
+                }
             }
+            
         }
         .payment-method{
             text-align: center;
@@ -313,12 +373,7 @@ footer {
             padding: 10px;
             i{
                 margin: 10px;
+                font-size: 30px;
             }
         }
-        
-
     }
-
-    
-
-}   
