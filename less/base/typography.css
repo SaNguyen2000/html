@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  margin: 0px auto;
+}
+@media (min-width: 320px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@font-face {
+  font-family: font-menu;
+  src: url('../stay-wildy.ttf');
+}

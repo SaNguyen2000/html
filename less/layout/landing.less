@@ -1,0 +1,210 @@
+.landing{
+    @font-face {
+        font-family: font-main;
+        src: url('../fonts/OpenSans.woff');
+    }
+    @font-face{
+        font-family: font-gift;
+        src: url('../fonts/futurastd-light-webfont.woff2');
+    }
+    .banner{
+        @media(min-width:768px){
+            background-color: #f4f4f4;
+        }
+        position: relative;
+        margin: 0px auto;
+        .banner-img-mobile,.banner-img-desktop{
+            width: 100%;
+        }
+        .banner-img-mobile{
+            @media(min-width: 768px){
+                display: none;
+            }
+        }
+            .banner-img-desktop{
+                // background-color: #f4f4f4;
+                padding-bottom:0xp;
+                height: 100%;
+                display: none;
+                @media(min-width: 768px){
+                    display: inline;
+                }
+            }
+        
+        .container-btn-bot,.container-btn-top{
+            margin: 0px auto;
+            width: 100%;
+            position: absolute;
+                .content-btn{
+                    margin: 0px auto;
+                    padding-top: 8px;
+                    padding-bottom: 10px;
+                    background-color: #e0be86;
+                    text-transform: uppercase;
+                    font-family: font-main;
+                    color: white;
+                    font-size: 10pt;
+                    text-align: center;
+                    border:none;
+                    width: 250px;
+                    display: block;
+                    text-decoration: none;
+                }      
+        }
+        .container-btn-top{
+            top: 20px;
+            .content-btn{
+                background-color: #403f41;
+            }
+            @media (min-width:1024px){
+                top: 30px;
+            }
+        }
+        .container-btn-bot{
+            bottom: 15px;
+            @media (min-width:1024px){
+                bottom: 30px;
+            }
+        }
+        
+        
+    }
+    .container{
+        margin: 0px auto;
+        .shop-with-image{
+            @media (min-width:768px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .shop-list{
+            @media (min-width: 768px){
+                display: grid;
+                grid-template-columns: auto auto;
+                // background-color: #2196F3;
+                // padding: 10px;
+            }
+
+        }
+        .shop{
+            // background-image: url(../images/father.png);
+            // background-repeat: no-repeat;
+            // background-size: 100%;
+            @media (min-width:768px){
+                margin: 2px 2px;
+            }
+            position: relative;
+
+            margin: 5px auto;
+            .img-shop{
+                img{
+                    margin: 0px auto;
+                    display: block;
+                    width: 100%;
+                }
+            }
+            // margin:  0px auto;
+            .btn,.btn2{
+                .content-shop{
+                    margin: 0px auto;
+                    padding-top: 8px;
+                    padding-bottom: 10px;
+                    background-color: #403f41;
+                    text-transform: uppercase;
+                    font-family: font-main;
+                    color: white;
+                    font-size: 10pt;
+                    text-align: center;
+                    border:none;
+                    width: 250px;
+                    display: block;
+                    text-decoration: none;
+                }
+            }
+            .btn2{
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+            }
+            // .btn-top-banner{
+            //     // background-color: #e0be86;
+            //     position: absolute;
+            //     bottom: 30px;
+            //     width: 100%;
+            //     .content-shop{
+            //         background-color: #e0be86;
+            //     }
+            // }
+            
+            // .content-shop-2{
+            //     position: absolute;
+            //     bottom: 15px;
+            //     margin-right: 10px;
+            //     margin-left: auto;
+            //     left: 0px;
+            //     right:0px;
+                // .content-shop();
+            // }
+        }
+        
+    }
+    
+    .gift{
+        .container{
+            margin-bottom: 20px;
+            @media(min-width:768px){
+                display: flex;
+                align-items: center;
+            }
+            .gift-img{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+                display: none;
+                @media(min-width: 768px){
+                    display: inline;
+                }
+            }
+            .gift-content{
+                @media(min-width: 768px){
+                    min-width: 50%;
+                }
+                text-align: center;
+                font-family: font-gift;
+                span{
+                    text-transform: uppercase;
+                    color: #414042;
+                }
+                color: #e0be86;
+                
+            }
+        }
+    }
+    .img-father{
+        img{
+            margin: 0px auto;
+            display: block;
+            width: 100%;
+        }
+    }
+    .banner-view-onxy{
+        width: 100%;
+        margin-bottom:0px;
+        padding-bottom: 0px;
+        // position: relative;
+        .container{
+            @media(min-width:320px){
+                transform: translate(0px,-100px);
+            }
+            @media(min-width:768px){
+                transform: translate(0px,-70px);
+            }
+            @media(min-width:1024px){
+                transform: translate(0px,-80px);
+            }
+        
+        }
+    }
+}

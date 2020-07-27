@@ -1,0 +1,341 @@
+footer {
+  color: #838283;
+  font-family: font-footer;
+}
+footer .copyright-footer {
+  padding: 10px;
+  background-color: #303030;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: font-footer;
+  font-size: 10px;
+}
+footer hr {
+  border: 1px solid #f3f3f3;
+}
+@font-face {
+  font-family: font-footer;
+  src: url('../fonts/OpenSans.woff');
+}
+footer .content-style {
+  text-align: center;
+  text-transform: uppercase;
+}
+footer .icon-style {
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11pt;
+  margin: 0 10px;
+}
+@media (min-width: 1024px) {
+  footer .footer-mobile-tablet {
+    display: none;
+  }
+}
+footer .footer-mobile-tablet .contact {
+  justify-content: center;
+}
+footer .footer-mobile-tablet .contact .contact-content {
+  text-align: center;
+  text-transform: uppercase;
+  color: #414042;
+  font-size: 11pt;
+  font-weight: bold;
+}
+footer .footer-mobile-tablet .contact .icons-contact {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 11pt;
+}
+footer .footer-mobile-tablet .contact .icons-contact .icon-chat,
+footer .footer-mobile-tablet .contact .icons-contact .icon-call,
+footer .footer-mobile-tablet .contact .icons-contact .icon-email {
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11pt;
+  margin: 0 10px;
+}
+footer .footer-mobile-tablet .contact .infor-contact {
+  text-align: center;
+  font-size: 11pt;
+  color: #a1a1a1;
+}
+footer .footer-mobile-tablet .contact .subscribe {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer .footer-mobile-tablet .contact .subscribe p {
+  text-align: center;
+  font-size: 11pt;
+  color: #414042;
+  font-family: font-footer;
+  padding: 10px 10px;
+}
+footer .footer-mobile-tablet .contact .subscribe .email-subscribe {
+  padding: 10px 10px;
+  border: none;
+  font-family: font-footer;
+  width: 50%;
+}
+footer .footer-mobile-tablet .contact .subscribe button {
+  padding: 10px 10px;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+footer .footer-mobile-tablet .box-content {
+  background-color: #414042;
+  text-transform: uppercase;
+  font-family: font-footer;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+footer .footer-mobile-tablet .box-content .content {
+  padding: 10px 10px;
+  border-bottom: solid 1px #4c4c4c;
+}
+footer .footer-mobile-tablet .box-content .content i {
+  float: right;
+}
+@media (min-width: 425px) {
+  footer .footer-mobile-tablet .review div,
+  footer .footer-mobile-tablet .bottom-footer div,
+  footer .footer-mobile-tablet .copyright-footer div {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+footer .footer-mobile-tablet .review {
+  padding: 10px;
+  background-color: #414042;
+  font-family: font-footer;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+}
+footer .footer-mobile-tablet .review div {
+  margin-top: 10px;
+}
+footer .footer-mobile-tablet .review .review-title {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+footer .footer-mobile-tablet .review .review-stars {
+  text-align: center;
+}
+footer .footer-mobile-tablet .review .review-content {
+  color: #aaaaaa;
+}
+footer .footer-mobile-tablet .review .review-content span {
+  color: white;
+}
+footer .footer-mobile-tablet .review .more-review {
+  color: #aaaaaa;
+}
+footer .footer-mobile-tablet .review .more-review span {
+  margin: 20px;
+  color: white;
+}
+footer .footer-mobile-tablet .review a {
+  text-decoration: none;
+  color: #d9b67c;
+}
+footer .footer-mobile-tablet .bottom-footer {
+  background-color: #414042;
+  padding: 10px;
+}
+footer .footer-mobile-tablet .bottom-footer .clear {
+  width: 100px;
+  height: 1px;
+  background-color: #4c4c4c;
+  margin: 10px auto;
+}
+footer .footer-mobile-tablet .bottom-footer .country-select {
+  height: 50px;
+}
+footer .footer-mobile-tablet .bottom-footer .country-select span {
+  width: 45%;
+}
+footer .footer-mobile-tablet .bottom-footer .country-select .country-content {
+  text-transform: uppercase;
+  float: left;
+  text-align: right;
+  font-size: 10px;
+  padding: 10px;
+}
+footer .footer-mobile-tablet .bottom-footer .country-select .country-region {
+  background-color: #414042;
+  float: right;
+}
+footer .footer-mobile-tablet .bottom-footer .country-select .country-region img {
+  padding: 10px;
+  width: 70px;
+  height: 40px;
+  float: left;
+}
+footer .footer-mobile-tablet .bottom-footer .social-icons,
+footer .footer-mobile-tablet .bottom-footer .payment-method {
+  text-align: center;
+}
+footer .footer-mobile-tablet .bottom-footer .social-icons i,
+footer .footer-mobile-tablet .bottom-footer .payment-method i {
+  margin: 10px;
+  color: white;
+}
+footer .footer-desktop {
+  font-family: font-footer;
+  background-color: #414042;
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer .footer-desktop {
+    display: inline;
+  }
+}
+footer .footer-desktop div {
+  background-color: #414042;
+  font-size: 13px;
+}
+footer .footer-desktop .clear {
+  width: 1px;
+  height: 50px;
+  background-color: #4c4c4c;
+  margin: auto  30px;
+}
+footer .footer-desktop .top-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+footer .footer-desktop .top-footer .container {
+  font-family: font-footer;
+  display: flex;
+  align-items: center;
+}
+footer .footer-desktop .top-footer .container .social-icons,
+footer .footer-desktop .top-footer .container .country-select {
+  width: 25%;
+  text-align: left;
+  text-transform: uppercase;
+}
+footer .footer-desktop .top-footer .container .social-icons i,
+footer .footer-desktop .top-footer .container .country-select i {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+footer .footer-desktop .top-footer .container .subscribe {
+  text-align: left;
+}
+footer .footer-desktop .top-footer .container .subscribe input {
+  color: #aaa;
+  background-color: #2d2d2e;
+  border: 1px solid #222;
+  height: 40px;
+  width: 70%;
+}
+footer .footer-desktop .top-footer .container .subscribe button {
+  background-color: transparent;
+  border: 1px solid #a2a2a2;
+  height: 40px;
+  width: 25%;
+  color: #a2a2a2;
+}
+footer .footer-desktop .top-footer .container .country-select {
+  width: 30%;
+  float: right;
+  text-align: left;
+}
+footer .footer-desktop .top-footer .container .country-select img {
+  vertical-align: middle;
+}
+footer .footer-desktop .top-footer .container .country-select span {
+  padding-left: 15px;
+  font-size: 10px;
+}
+footer .footer-desktop .review-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+footer .footer-desktop .review-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+footer .footer-desktop .review-footer .container {
+  display: flex;
+}
+footer .footer-desktop .review-footer .container .review-detail,
+footer .footer-desktop .review-footer .container .more-review {
+  width: 25%;
+  margin-right: 15px;
+}
+footer .footer-desktop .review-footer .container .review-detail {
+  text-align: left;
+}
+footer .footer-desktop .review-footer .container .review-detail .review-stars i {
+  color: white;
+  font-size: 16px;
+}
+footer .footer-desktop .review-footer .container .review-detail .review-content {
+  font-size: 12px;
+}
+footer .footer-desktop .review-footer .container .review-detail .review-content span {
+  color: white;
+}
+footer .footer-desktop .review-footer .container .review-detail .review-content a {
+  text-decoration: none;
+  color: #d9b67c;
+}
+footer .footer-desktop .review-footer .container .more-review {
+  font-size: 12px;
+}
+footer .footer-desktop .review-footer .container .more-review span {
+  color: white;
+}
+footer .footer-desktop .review-footer .container .more-review a {
+  text-decoration: none;
+  color: #d9b67c;
+}
+footer .footer-desktop .content-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+footer .footer-desktop .content-footer .container {
+  display: flex;
+}
+footer .footer-desktop .content-footer .container .content {
+  width: 25%;
+  margin-right: 15px;
+}
+footer .footer-desktop .content-footer .container .content .title-content,
+footer .footer-desktop .content-footer .container .content .contact {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+footer .footer-desktop .content-footer .container .content li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+footer .footer-desktop .content-footer .container .content li span {
+  color: #727272;
+}
+footer .payment-method {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+footer .payment-method i {
+  margin: 10px;
+  font-size: 30px;
+}
