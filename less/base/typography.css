@@ -7,7 +7,7 @@ body {
 }
 @media (min-width: 320px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 @media (min-width: 576px) {
@@ -20,9 +20,9 @@ body {
     max-width: 700px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container {
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
@@ -31,6 +31,41 @@ body {
   }
 }
 @font-face {
+  font-family: font-footer;
+  src: url('../fonts/OpenSans.ttf');
+  src: url('../fonts/OpenSans.eot');
+  src: url('../fonts/OpenSans.svg');
+  src: url('../fonts/OpenSans.woff');
+}
+@font-face {
   font-family: font-menu;
-  src: url('../stay-wildy.ttf');
+  src: url('../fonts/futurastd-light-webfont.ttf');
+  src: url('../fonts/futurastd-light-webfont.eot');
+  src: url('../fonts/futurastd-light-webfont.svg');
+  src: url('../fonts/futurastd-light-webfont.woff');
+}
+@font-face {
+  font-family: font-futurabt-bold;
+  src: url('../fonts/FuturaBT-Bold.ttf');
+  src: url('../fonts/FuturaBT-Bold.eot');
+  src: url('../fonts/FuturaBT-Bold.svg');
+  src: url('../fonts/FuturaBT-Bold.woff');
+}
+@font-face {
+  font-family: font-futurabt;
+  src: url('../fonts/FuturaBT-Medium.ttf');
+  src: url('../fonts/FuturaBT-Medium.eot');
+  src: url('../fonts/FuturaBT-Medium.svg');
+  src: url('../fonts/FuturaBT-Medium.woff');
+}
+@font-face {
+  font-family: font-main;
+  src: url('../fonts/OpenSans.eot');
+  src: url('../fonts/OpenSans.ttf');
+  src: url('../fonts/OpenSans.svg');
+  src: url('../fonts/OpenSans.woff');
+}
+@font-face {
+  font-family: font-gift;
+  src: url('../fonts/futurastd-light-webfont.woff2');
 }

@@ -1,11 +1,3 @@
-@font-face {
-  font-family: font-main;
-  src: url('../fonts/OpenSans.woff');
-}
-@font-face {
-  font-family: font-gift;
-  src: url('../fonts/futurastd-light-webfont.woff2');
-}
 .landing .banner {
   position: relative;
   margin: 0px auto;
@@ -13,6 +5,72 @@
 @media (min-width: 768px) {
   .landing .banner {
     background-color: #f4f4f4;
+  }
+}
+.landing .banner .banner-top {
+  position: relative;
+  background-color: #f4f4f4;
+}
+.landing .banner .banner-top .banner-top-img-mobile,
+.landing .banner .banner-top .banner-top-img-mobile {
+  width: 100%;
+}
+.landing .banner .banner-top .banner-top-img-mobile {
+  display: inline;
+}
+@media (min-width: 768px) {
+  .landing .banner .banner-top .banner-top-img-mobile {
+    display: none;
+  }
+}
+.landing .banner .banner-top .banner-top-img-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .landing .banner .banner-top .banner-top-img-desktop {
+    display: inline;
+  }
+}
+.landing .banner .banner-top .container .banner-top-text {
+  position: absolute;
+  width: 50%;
+  color: #414042;
+  text-align: center;
+  margin-right: 0px;
+  font-family: font-footer;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.landing .banner .banner-top .container .banner-top-text p {
+  font-family: font-futurabt-bold;
+  font-size: 15px;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .landing .banner .banner-top .container .banner-top-text p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 320px) {
+  .landing .banner .banner-top .container .banner-top-text {
+    left: 50%;
+    top: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .landing .banner .banner-top .container .banner-top-text {
+    text-align: left;
+    width: 30%;
+    left: 60%;
+    top: 10%;
+    font-size: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .landing .banner .banner-top .container .banner-top-text {
+    width: 40%;
+    top: 20%;
+    left: 50%;
   }
 }
 .landing .banner .banner-img-mobile,

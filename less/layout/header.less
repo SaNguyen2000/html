@@ -1,119 +1,128 @@
 header{
-    @font-face{
-        font-family: font-menu;
-        src: url('../fonts/futurastd-light-webfont.ttf');
-    }
-    
     .top-header{
-        background-color:  #4c4c4c;
-        @media (min-width:480px)  {
-            background-color:#414042;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @media(min-width: 320px){   
+            background-color: #4c4c4c;
+            // height: 40px;
+            
+        }
+        @media(min-width: 768px){
+            background-color: #414143;
             border-bottom: solid 1px;
             border-color:  #313133;
         }
         
         .container{
-            color: #A2A2A2;
-            overflow: hidden;
-            font-family: font-menu;
-            padding: 5px 5px;
-            @media (max-width: 480px){
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .top-left{
+                color: #A2A2A2;
+                overflow: hidden;
+                font-family: font-menu;
+                @media (max-width: 480px){
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
-            }
-            .return{
-                margin-left: 20px;
-            }
-            .shipping, .return{
-                float: left;      
-                span,a,i{
-                    color: #A2A2A2;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 12px;
                 }
-                span{
-                    display: inline;
-                    @media (min-width: 480px){
-                        display: none;
+                .shipping{
+                    margin-right: 20px;
+                    .shipping-icon{
+                        margin-right: 5px;
+                        background-image: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/bg_shipping.png);
+                        background-repeat: no-repeat;
+                        background-size: 22px auto;
+                        background-position: center center;
                     }
                 }
-                i{
-                    display: none;
-                    @media (min-width: 480px){
-                        display: inline;
+                .return{
+                    .return-icon{
+                        background-image: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/bg_return_policy.png);
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 11px auto;
                     }
                 }
-                a:hover{
-                    color: white;
-                }
-                
-            }
-            .top-right{
-                display: none;
-                @media (min-width: 480px){
-                    display: inline;
-                }
-                float: right;
-                text-transform: uppercase;
-                div{
-                    margin-left: 20px;
-                    float: left;
-                    a{
+                .shipping, .return{
+                    float: left;      
+                    span,a,i{
                         color: #A2A2A2;
                         text-align: center;
                         text-decoration: none;
-                        font-size: 12px;
+                        font-size: 13px;
+                        word-spacing: 1px;
                     }
-                    .content-icon{
+                    .shipping-icon,.return-icon{
+                        display: inline;
+                        @media (min-width: 768px){
+                            display: none;
+                        }
+                    }
+                    i{
                         display: none;
-                        @media (min-width: 1024px){
+                        @media (min-width: 768px){
                             display: inline;
                         }
                     }
+                    a:hover{
+                        color: white;
+                    }
                     
                 }
-                .heart, .bag{
-                    padding-left: 10px;
-                    border-left:solid 1px ;
-                    :hover{
-                        color: white;
+                .top-right{
+                    display: none;
+                    @media (min-width: 480px){
+                        display: inline;
                     }
-                    i{
-                        color: white;
-                    }
-                }
-                .heart{
-                        border: none;
-                        @media(min-width:640px){
-                            border-left:solid 1px;
+                    float: right;
+                    text-transform: uppercase;
+                    div{
+                        margin-left: 10px;
+                        float: left;
+                        :hover{
+                            color: white;
+                        }
+                        a{
+                            color: #A2A2A2;
+                            text-align: center;
+                            text-decoration: none;
+                            font-size: 12px;
+                            
+                        }
+                        .content-icon{
+                            display: none;
+                            @media (min-width: 1024px){
+                                display: inline;
+                            }
+                        }
+                        .num-icon{
+                            display: none;
+                            @media (min-width: 768px){
+                                display: inline;
+                            }
                         }
                     }
                     
-                }
-                .login{
-                    display: none;
+                    .login{ 
+                        display: none;
+                        @media(min-width:768px){
+                            display: inline;
+                        }
+                    }
+                    .top-heart,.login{
+                        padding-right: 10px;
+                        border-right: 1px solid;
+                    }
                     
-                    @media(min-width:640px){
-                        display: inline;
-                    }
-                    :hover{
-                        color: white;
-                    }
                 }
-                
             }
+            
+            
         }
                 
     }
     .hr{
-        // display: none;
-        
-        
-        @media(min-width: 480px){
-            // display: inline;
+        @media(min-width: 768px){
             height: 4px;
             width: 100%;
             background-color:  #414143;
@@ -129,129 +138,137 @@ header{
         background-color: #414042;
         color: #fff;
         .container{
-        padding: 10px 15px;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-            .left-logo{
-                width: 35%;
+            .header-logo-ingredient{
+                padding-top: 15px;
+                padding-bottom: 15px;
                 display: flex;
-                .menu-mobile,.search-mobile{
-                    i{
-                        font-size: 16px;
+                align-items: center;
+                justify-items: center;
+                .left-logo{
+                    width: 35%;
+                    @media (min-width:1024px){
+                        width: 45%;
+                    }
+                    display: flex;
+                    .menu-mobile,.search-mobile{
                         margin-right: 10px;
-                    }
-                    
-                }
-                .menu-mobile{
-                    display: inline;
-                    @media(min-width: 900px){
-                        display: none;
-                    }
-                    
-                }
-                .search-mobile{
-                    display: inline;
-                    @media (min-width: 480px){
-                        display: none;
-                    }
-                }
-                .menu-desktop{
-                    .nav-menu-desktop{
-                        display: none;
-                        @media (min-width:900px){
-                            display: inline;
-                            padding-top: 30px;
-                            overflow: hidden;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            a{
-                                float: left;
-                                color: #a2a2a2;
-                                text-align: center;
-                                padding-right: 10px;
-                                text-decoration: none;
-                                font-size: 13px;
-                                text-transform: uppercase;
-                                font-family: font-menu;
-                            }
-                            :hover{
-                                color: white;
-                            }
-                            :visited{
-                                background-color: #5c5c5c;
-                            }
-                        }
                         
                     }
-                }
-            }
-
-            .img-logo{
-                margin: 0 auto;
-                img{
-                    height: 25px;
-                }  
-            }
-
-            .right-logo{
-                width:35%;
-                text-align: right;
-                .right-logo-mobile{
-                    display: inline;
-                    @media (min-width: 480px){
-                        display: none;
-                    }
-                    i{
-                        font-size: 16px;
-                        margin-left: 10px;
-                    }
-                }
-                input{
-                    color:#A2A2A2 ;
-                }
-                .search-tablet-desktop{
-
-                    i{
-                        display: none;
-                        @media (min-width:480px) {
-                            display: inline;
-                            // @media (min-width: 768px){
-                            //     display: none;
-                            // }
+                    .menu-mobile{
+                        @media(min-width: 900px){
+                            display: none;
                         }
-                        color: #A2A2A2;
+                        background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/header_sprites_v4.png) no-repeat;
+                        background-position: 0 -100px;
+                        width: 25px;
+                        height: 25px;
+                        background-size: 275px auto;
                     }
-                    .search-tablet{
-                        text-align: right;
-                        background-color: #414042;
-                        font-style: italic;
-                        font-family: font-menu;
-                        border: none;
-                        display: none;
-                        @media(min-width: 480px){
-                            display: inline;
-                        }
-                        @media(min-width: 1024px){
+                    .icon-search-1{
+                        @media (min-width: 480px){
                             display: none;
                         }
                     }
-                    .search-desktop{
-                        .search-tablet();
-                        text-align: left;
-                        border-bottom: solid 1px;
-                        border-color:  #A2A2A2;
-                        display: none;
-                        @media (min-width:480px){
+                    .menu-desktop{
+                        .nav-menu-desktop{
+                            display: none;
+                            @media (min-width:900px){
+                                display: inline;
+                                padding-top: 30px;
+                                overflow: hidden;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                .menu-text{
+                                    float: left;
+                                    color: #a2a2a2;
+                                    text-align: center;
+                                    padding-right: 10px;
+                                    text-decoration: none;
+                                    font-size: 13px;
+                                    text-transform: uppercase;
+                                    font-family: font-menu;
+                                    border-left: solid 1px;
+                                    padding-left: 10px;
+                                    
+                                }
+                                a:first-child{
+                                    border: none;
+                                    padding-left: 0px;
+                                }
+                                :hover{
+                                    color: white;
+                                }
+                                :visited{
+                                    background-color: #5c5c5c;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+                .img-logo{
+                    @media(min-width:320px){
+                        img{
+                            width: 133px;
+                        } 
+                    }
+                    @media(min-width:768px){
+                        img{
+                            width: 218px;
+                        } 
+                    }
+                 
+                }
+
+                .right-logo{
+                    width:35%;
+                    @media (min-width:1024px){
+                        width: 45%;
+                    }
+                    text-align: right;
+                    .right-logo-mobile{
+                        display: inline;
+                        @media (min-width: 480px){
                             display: none;
                         }
-                        @media(min-width:1024px){
-                            display: inline;
+                        span{
+                            margin-left: 10px;
+                        }
+                    }
+                    .search-tablet-desktop{
+                        .btn-search{
+                            border: none;
+                            background-color:#414143;
+                            display: none;
+                            @media (min-width:480px) {
+                                display: inline;
+                            }
+                            color: #A2A2A2;
+                        }
+                        .search-tablet{
+                            .search();
+                            @media(min-width: 480px){
+                                display: inline;
+                            }
+                            @media(min-width: 1024px){
+                                display: none;
+                            }
+                        }
+                        .search-desktop{
+                            .search();
+                            text-align: left;
+                            border-bottom: solid 1px;
+                            display: none;
+                            @media(min-width:1024px){
+                                display: inline;
+                            }
                         }
                     }
                 }
             }
+        
         }   
     }
     
@@ -260,12 +277,14 @@ header{
         overflow: hidden;
         background-color: #efeae5;
         .container{
-            
             a{
                 float: left;
                 padding: 10px 0px;
-                margin-right: 15px;
-                color: #8b8b8b;
+                @media (min-width:768px){
+                    margin-right: 30px;
+                }
+                margin-right: 20px;
+                color: #414143;
                 text-align: center;
                 text-decoration: none;
                 font-size: 13px;
@@ -276,13 +295,6 @@ header{
                 text-decoration: underline;
             }
             .topnav-mobile-tablet{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // display: inline;
-                // @media (min-width:900px){
-                //     display: none;
-                // }
                 @media (min-width: 320px){
                     display: flex;
                     align-items: center;
@@ -301,4 +313,4 @@ header{
             }
         }
     }
-// }
+}

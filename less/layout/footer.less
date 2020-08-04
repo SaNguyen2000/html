@@ -6,17 +6,19 @@ footer {
         text-align: center;
         text-transform: uppercase;
         font-family: font-footer;
-        font-size: 10px;
+        @media (min-width:320px) {
+            font-size: 10px;
+        }
+        @media (min-width:768px){
+            font-size: 16px;
+        }
     }
 
     hr{
         border:1px solid #f3f3f3 ;
     }
 
-    @font-face {
-        font-family: font-footer;
-        src: url('../fonts/OpenSans.woff');
-    }
+    
 
     color: #838283;
     font-family: font-footer;
@@ -98,22 +100,27 @@ footer {
             background-color: #414042;
             text-transform: uppercase;
             font-family: font-footer;
-            padding: 10px;
+            // padding: 10px;
             color: #fff;
             font-size: 14px;
-            .content{
-                padding: 10px 10px;;
+            .box{
                 border-bottom: solid 1px #4c4c4c;
-                i{
-                    float: right;
+                .content{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    
+                    i{
+                        float: right;
+                    }
+                    
                 }
-                
             }
+            
         }
         .review, .bottom-footer, .copyright-footer{
             @media (min-width: 425px){
                 div{
-                    width: 350px;
+                    // width: 350px;
                     text-align: center;
                     margin: 0 auto;
                 }
@@ -173,31 +180,39 @@ footer {
             padding: 10px;
             
             .country-select{
-                span{
-                    width: 45%;
+                max-width: 320px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .country-flag{
+                    background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/sprites_country_v25.png) no-repeat;
+                    background-position: 0 -220px;
+                    width: 16px;
+                    height: 10px;
                 }
                 height: 50px;
-                .country-content{
+                .country-text{
                     text-transform: uppercase;
-                    float: left;
-                    text-align: right;
+                    text-align: center;
                     font-size: 10px;
-                    padding: 10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
                 }
                 .country-region{
+                    text-align: center;
                     img{
-                        padding: 10px;
+                        // padding: 10px;
                         width: 70px;
                         height: 40px;
-                        float: left;
+                        // float:right;
                     }
                     background-color: #414042;
-                    float: right;
                 }
             }
             .social-icons, .payment-method{
                 text-align: center;
                 i{
+                    font-size: 14px;
                     margin: 10px;
                     color: white;
                 }
@@ -264,6 +279,7 @@ footer {
                 }
                 button{
                     background-color: transparent;
+                    text-transform: uppercase;
                     border: 1px solid #a2a2a2;
                     height: 40px;
                     width: 25%;
@@ -354,14 +370,27 @@ footer {
                         margin-bottom: 10px;
                         font-size: 14px;
                     }
+                    ul{
+                        padding-left: 0px;
+                    }
                     li{
                         list-style: none;
                         margin-bottom: 10px;
-                        font-size: 10px;
-                        color: #aaaaaa;
+                        a,p{
+                            text-decoration: none;
+                            font-size: 13px;
+                            color: #aaaaaa;
+                            .lg-ship{
+                                vertical-align: text-top;
+                            }
+                        }
+                        a:hover{
+                            color: #fff;
+                        }
                         span{
                             color: #727272;
                         }
+                        
                     }
                     }
                 }
@@ -374,7 +403,7 @@ footer {
             padding: 10px;
             i{
                 margin: 10px;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }

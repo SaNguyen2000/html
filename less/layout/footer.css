@@ -8,14 +8,19 @@ footer .copyright-footer {
   text-align: center;
   text-transform: uppercase;
   font-family: font-footer;
-  font-size: 10px;
+}
+@media (min-width: 320px) {
+  footer .copyright-footer {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  footer .copyright-footer {
+    font-size: 16px;
+  }
 }
 footer hr {
   border: 1px solid #f3f3f3;
-}
-@font-face {
-  font-family: font-footer;
-  src: url('../fonts/OpenSans.woff');
 }
 footer .content-style {
   text-align: center;
@@ -90,22 +95,23 @@ footer .footer-mobile-tablet .box-content {
   background-color: #414042;
   text-transform: uppercase;
   font-family: font-footer;
-  padding: 10px;
   color: #fff;
   font-size: 14px;
 }
-footer .footer-mobile-tablet .box-content .content {
-  padding: 10px 10px;
+footer .footer-mobile-tablet .box-content .box {
   border-bottom: solid 1px #4c4c4c;
 }
-footer .footer-mobile-tablet .box-content .content i {
+footer .footer-mobile-tablet .box-content .box .content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .footer-mobile-tablet .box-content .box .content i {
   float: right;
 }
 @media (min-width: 425px) {
   footer .footer-mobile-tablet .review div,
   footer .footer-mobile-tablet .bottom-footer div,
   footer .footer-mobile-tablet .copyright-footer div {
-    width: 350px;
     text-align: center;
     margin: 0 auto;
   }
@@ -156,27 +162,32 @@ footer .footer-mobile-tablet .bottom-footer .clear {
   margin: 10px auto;
 }
 footer .footer-mobile-tablet .bottom-footer .country-select {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
 }
-footer .footer-mobile-tablet .bottom-footer .country-select span {
-  width: 45%;
+footer .footer-mobile-tablet .bottom-footer .country-select .country-flag {
+  background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/sprites_country_v25.png) no-repeat;
+  background-position: 0 -220px;
+  width: 16px;
+  height: 10px;
 }
-footer .footer-mobile-tablet .bottom-footer .country-select .country-content {
+footer .footer-mobile-tablet .bottom-footer .country-select .country-text {
   text-transform: uppercase;
-  float: left;
-  text-align: right;
+  text-align: center;
   font-size: 10px;
-  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 footer .footer-mobile-tablet .bottom-footer .country-select .country-region {
+  text-align: center;
   background-color: #414042;
-  float: right;
 }
 footer .footer-mobile-tablet .bottom-footer .country-select .country-region img {
-  padding: 10px;
   width: 70px;
   height: 40px;
-  float: left;
 }
 footer .footer-mobile-tablet .bottom-footer .social-icons,
 footer .footer-mobile-tablet .bottom-footer .payment-method {
@@ -184,6 +195,7 @@ footer .footer-mobile-tablet .bottom-footer .payment-method {
 }
 footer .footer-mobile-tablet .bottom-footer .social-icons i,
 footer .footer-mobile-tablet .bottom-footer .payment-method i {
+  font-size: 14px;
   margin: 10px;
   color: white;
 }
@@ -240,6 +252,7 @@ footer .footer-desktop .top-footer .container .subscribe input {
 }
 footer .footer-desktop .top-footer .container .subscribe button {
   background-color: transparent;
+  text-transform: uppercase;
   border: 1px solid #a2a2a2;
   height: 40px;
   width: 25%;
@@ -321,11 +334,25 @@ footer .footer-desktop .content-footer .container .content .contact {
   margin-bottom: 10px;
   font-size: 14px;
 }
+footer .footer-desktop .content-footer .container .content ul {
+  padding-left: 0px;
+}
 footer .footer-desktop .content-footer .container .content li {
   list-style: none;
   margin-bottom: 10px;
-  font-size: 10px;
+}
+footer .footer-desktop .content-footer .container .content li a,
+footer .footer-desktop .content-footer .container .content li p {
+  text-decoration: none;
+  font-size: 13px;
   color: #aaaaaa;
+}
+footer .footer-desktop .content-footer .container .content li a .lg-ship,
+footer .footer-desktop .content-footer .container .content li p .lg-ship {
+  vertical-align: text-top;
+}
+footer .footer-desktop .content-footer .container .content li a:hover {
+  color: #fff;
 }
 footer .footer-desktop .content-footer .container .content li span {
   color: #727272;
@@ -337,5 +364,5 @@ footer .payment-method {
 }
 footer .payment-method i {
   margin: 10px;
-  font-size: 30px;
+  font-size: 20px;
 }

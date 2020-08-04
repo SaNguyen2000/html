@@ -1,0 +1,44 @@
+.product-list .banner {
+  background-color: #f3f3f3;
+}
+.product-list .banner .container .img-text {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+.product-list .banner .container .img-text .banner-img-mobile {
+  width: 50%;
+}
+.product-list .banner .container .img-text .banner-img-mobile img {
+  width: 100%;
+}
+.product-list .banner .container .img-text .banner-text-mobile {
+  width: 50%;
+}
+.product-list .banner .container .img-text .banner-text-mobile p {
+  text-align: right;
+  font-family: font-futurabt;
+  font-size: 8px;
+  color: #888787;
+}
+.product-list .banner .container .img-text .banner-text-mobile p span {
+  font-family: font-futurabt-bold;
+  text-transform: uppercase;
+  font-size: 13pt;
+  font-weight: bold;
+  color: #414042;
+}
+.product-list .banner .container .messege {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: right;
+  font-family: font-futurabt;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+.product-list .banner .container .slider {
+  margin: 10px;
+}
+.product-list .banner .container .slider .prod {
+  border: solid 1px;
+}
