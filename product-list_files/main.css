@@ -113,9 +113,10 @@ body {
 }
 @font-face {
   font-family: font-main;
-  src: url('../fonts/OpenSans-Semibold.ttf');
-  src: url('../fonts/OpenSans-Semibold.svg');
-  src: url('../fonts/OpenSans-Semibold.woff');
+  src: url('../fonts/OpenSans.eot');
+  src: url('../fonts/OpenSans.ttf');
+  src: url('../fonts/OpenSans.svg');
+  src: url('../fonts/OpenSans.woff');
 }
 @font-face {
   font-family: font-gift;
@@ -1225,6 +1226,7 @@ footer .payment-method i {
   padding: 10px;
 }
 .product-list .main-col .container .list-pr .product {
+  margin: ;
   margin: 0px 3px;
   font-family: font-gift;
   color: #a1a1a1;
@@ -1261,13 +1263,12 @@ footer .payment-method i {
 .product-list .main-col .container .list-pr .product .clear-hor {
   width: 100%;
   margin: 0px;
-  background-color: #f1f0f1;
+  background-color: #a1a1a1;
 }
 .product-list .main-col .container .list-pr .product .play-heart {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #767676;
 }
 .product-list .main-col .container .list-pr .product .play-heart .clear-ver {
   background-color: #a1a1a1;

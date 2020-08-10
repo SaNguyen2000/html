@@ -60,10 +60,9 @@ body {
 }
 @font-face {
   font-family: font-main;
-  src: url('../fonts/OpenSans.eot');
-  src: url('../fonts/OpenSans.ttf');
-  src: url('../fonts/OpenSans.svg');
-  src: url('../fonts/OpenSans.woff');
+  src: url('../fonts/OpenSans-Semibold.ttf');
+  src: url('../fonts/OpenSans-Semibold.svg');
+  src: url('../fonts/OpenSans-Semibold.woff');
 }
 @font-face {
   font-family: font-gift;

@@ -1,0 +1,53 @@
+.icon-heart {
+  background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/header_sprites_v4.png) no-repeat;
+  background-position: 0 0;
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  background-size: 330px auto;
+}
+.icon-bag {
+  background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/header_sprites_v4.png) no-repeat;
+  background-position: 0 -48px;
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  background-size: 330px auto;
+}
+.icon-search-1 {
+  background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/header_sprites_v4.png) no-repeat;
+  background-position: -47px 0;
+  width: 25px;
+  height: 25px;
+  background-size: 330px auto;
+}
+.search {
+  color: #A2A2A2;
+  text-align: right;
+  background-color: #414042;
+  font-style: italic;
+  font-family: font-menu;
+  border: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  .hr {
+    height: 4px;
+    width: 100%;
+    background-color: #414143;
+    border-bottom: solid 1px;
+    border-color: #4a4a4b;
+  }
+}
+.clear-ver {
+  width: 1px;
+  height: 50px;
+  background-color: #4c4c4c;
+  margin: auto  30px;
+}
+.clear-hor {
+  width: 100px;
+  height: 1px;
+  background-color: #4c4c4c;
+  margin: 10px auto;
+}

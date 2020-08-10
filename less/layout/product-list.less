@@ -5,7 +5,7 @@
         // background-color: red;
         .container{
             .img-text{
-                display: flex;
+                display: flex;  
                 align-items: center;
                 margin: 0px auto;
                 .banner-img-mobile{
@@ -22,12 +22,12 @@
                         span{
                             font-family: font-futurabt-bold;
                             text-transform: uppercase;
-                            font-size: 13pt;
+                            font-size: 8px;
                             font-weight: bold;
                             color: #414042;
                         }
                         font-family: font-futurabt;
-                        font-size: 8px;
+                        font-size: 6px;
                         color: #888787;
                     }
                 }
@@ -37,16 +37,186 @@
                 text-transform: uppercase;
                 text-align: right;
                 font-family: font-futurabt;
-                font-size: 13px;
+                font-size: 7px;
                 margin-bottom:13px;
             }
-            .slider{
-                margin: 10px;
-                .prod{
-                    border: solid 1px;
+        }
+        .slider{
+            text-align: center;
+            margin: 0px auto;
+            width: 100%;
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            .slide-prod1{
+                background-color: #fff;
+            }
+            .slide-prod1{
+                background-color: #efeae5;
+            }
+            .slide-prod1,.slide-prod2{
+                // background-color: white;
+                margin: 0px 5px;  
+                border: solid 1px;
+                border-color: #e4e4e4;
+                width: 90px;
+                height: 90px;
+                flex-shrink: 0;
+                justify-content: center;
+                .text-prod,.icon-prod{
+                    font-family: font-futurabt;
+                    color: #676767;
+                    font-size: 10px;
+                }
+                .img-prod{
+                    height: 60px;
+                    margin:0px auto;
+                    display: flex;
+                    
+                    align-items: center;
+                    .img-slider{
+                        width: 80%;
+                        margin: 0px auto;
+                        display: block;
+                    }
+                    
+                }
+                .icon-prod{
+                    padding-right: 5px;
+                    text-align: right;
                 }
             }
         }
-        
+    }
+    .main-col{
+        margin-top: 10px;
+        .container{
+            .top-bar{
+                display: flex;
+                margin: 0px auto;
+                .left-bar{
+                    // float: left;
+                    width: 50%;
+                    // margin:0px auto;
+                    .list{
+                        background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/grid_view_new.png) no-repeat;
+                        display: inline-block;
+                        text-indent: -99999px;
+                        font-size: 0px;
+                        line-height: 33px;
+                        float: left;
+                        width: 25px;
+                        height: 25px;
+                                        
+                    }
+                    .grid{
+                        background: url(https://res.cloudinary.com/glamira/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/skin/frontend/glamira2014/default/images/grid_view_new.png) no-repeat;
+                        background-position: -75px -88px;
+                        width: 25px;
+                        height: 25px;
+                        display: inline-block;
+                        text-indent: -99999px;
+                        font-size: 0px;
+                        margin-left: 10px;
+                        line-height: 33px;
+                    }
+                }
+                .right-bar{
+                    width: 50%;
+                    button{
+                        height: 30px;
+                        width: 100px;
+                        float: right;
+                        border-radius:5px;
+                        border: solid 1px;
+                        border-color: #e4e4e4;
+                        background-color: #fcf9f1;
+                        font-family: font-futurabt;
+                        font-size: 8px;
+                        color: #676767;
+                        img{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+            }   
+            .list-pr{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10px;
+                .product{
+                    margin: 0px 3px; 
+                    font-family: font-gift;
+                    color: #a1a1a1;
+                    .img-product{
+                        display: flex;
+                        align-items: center;
+                        .icon1{
+                            height: 100%;
+                        }
+                        .cg{
+                            width: 100%;
+                            margin: 0px auto;
+                            display: block;
+                        }
+                    }
+                        
+                    
+                        // a{
+                        //     img{
+                        //         width: 100%;
+                        //         // width: 30%;
+                        //         margin: 0px auto;
+                        //         display: block;
+                        //     }
+                        // } 
+                    .style-slide-crown{
+                        // width: 100%;    
+                        margin: 0px auto;
+                        display: block;
+                    }
+                    .text-product{
+                        text-align: center;
+                        width: 100%;
+                        
+                        .product-name{
+                            font-size: 13px;
+                        }
+                        .detail-inf{
+                            font-size: 10px;
+                        }
+                        .price{
+                            font-size: 14px;
+                        }
+                    }
+                    .clear-hor{
+                        width: 100%;
+                        margin: 0px;
+                        background-color: #f1f0f1;
+                    }
+                    .play-heart{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #767676;
+                        .clear-ver{
+                            background-color: #a1a1a1;
+                            height: 20px;
+                            margin: 3px 10px;
+                        }
+                    }
+                    div{
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color:#a1a1a1 ;
+                        }
+                    }
+                    
+                }
+            }
+
+        }
     }
 }

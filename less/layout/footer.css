@@ -155,12 +155,6 @@ footer .footer-mobile-tablet .bottom-footer {
   background-color: #414042;
   padding: 10px;
 }
-footer .footer-mobile-tablet .bottom-footer .clear {
-  width: 100px;
-  height: 1px;
-  background-color: #4c4c4c;
-  margin: 10px auto;
-}
 footer .footer-mobile-tablet .bottom-footer .country-select {
   max-width: 320px;
   display: flex;
@@ -212,12 +206,6 @@ footer .footer-desktop {
 footer .footer-desktop div {
   background-color: #414042;
   font-size: 13px;
-}
-footer .footer-desktop .clear {
-  width: 1px;
-  height: 50px;
-  background-color: #4c4c4c;
-  margin: auto  30px;
 }
 footer .footer-desktop .top-footer {
   padding-top: 10px;
