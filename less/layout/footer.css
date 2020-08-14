@@ -126,6 +126,7 @@ footer .footer-mobile-tablet .review {
 }
 footer .footer-mobile-tablet .review div {
   margin-top: 10px;
+  max-width: 480px;
 }
 footer .footer-mobile-tablet .review .review-title {
   font-size: 13px;
@@ -194,7 +195,6 @@ footer .footer-mobile-tablet .bottom-footer .payment-method i {
   color: white;
 }
 footer .footer-desktop {
-  font-family: font-footer;
   background-color: #414042;
   display: none;
 }
@@ -320,7 +320,7 @@ footer .footer-desktop .content-footer .container .content .contact {
   color: white;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
 }
 footer .footer-desktop .content-footer .container .content ul {
   padding-left: 0px;
@@ -331,6 +331,7 @@ footer .footer-desktop .content-footer .container .content li {
 }
 footer .footer-desktop .content-footer .container .content li a,
 footer .footer-desktop .content-footer .container .content li p {
+  font-family: font-footer;
   text-decoration: none;
   font-size: 13px;
   color: #aaaaaa;
@@ -352,5 +353,5 @@ footer .payment-method {
 }
 footer .payment-method i {
   margin: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
