@@ -971,7 +971,7 @@ footer .payment-method i {
   margin: 0px auto;
 }
 .landing .container .shop-father {
-  margin: 0px auto;
+  margin: 30px auto;
 }
 @media (min-width: 768px) {
   .landing .container .shop-father {
@@ -987,6 +987,7 @@ footer .payment-method i {
   width: 100%;
 }
 .landing .container .shop-father .shop-ring .img-ring-mobile {
+  margin: 20px auto;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1020,13 +1021,15 @@ footer .payment-method i {
   display: block;
   text-decoration: none;
 }
+.landing .container .shop-father .father {
+  margin: 10px auto;
+}
 @media (min-width: 768px) {
   .landing .container .shop-father .father .img-father-mobile {
     display: none;
   }
 }
 .landing .container .shop-father .father .img-father-mobile img {
-  margin: 0px auto;
   display: block;
   width: 100%;
 }
@@ -1346,25 +1349,19 @@ footer .payment-method i {
   text-decoration: none;
 }
 @media (min-width: 320px) {
-  .landing .banner-view-onxy .container,
-  .landing .banner-view-onxy .gift-mobile {
+  .landing .banner-view-onxy .container {
     transform: translate(0px, -100px);
   }
 }
 @media (min-width: 768px) {
-  .landing .banner-view-onxy .container,
-  .landing .banner-view-onxy .gift-mobile {
+  .landing .banner-view-onxy .container {
     transform: translate(0px, -70px);
   }
 }
 @media (min-width: 1024px) {
-  .landing .banner-view-onxy .container,
-  .landing .banner-view-onxy .gift-mobile {
+  .landing .banner-view-onxy .container {
     transform: translate(0px, -80px);
   }
-}
-.landing .banner-view-onxy .gift {
-  margin-top: 20px auto;
 }
 @media (min-width: 768px) {
   .landing .banner-view-onxy .gift {
@@ -1373,6 +1370,7 @@ footer .payment-method i {
   }
 }
 .landing .banner-view-onxy .gift .gift-content {
+  padding: 10px;
   text-align: center;
   font-family: font-gift;
   font-size: 17px;
@@ -1418,43 +1416,73 @@ footer .payment-method i {
   align-items: center;
   margin: 0px auto;
 }
-.product-list .banner .container .img-text .banner-img-mobile {
+.product-list .banner .container .img-text .banner-img {
   width: 50%;
 }
-.product-list .banner .container .img-text .banner-img-mobile img {
+.product-list .banner .container .img-text .banner-img img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .product-list .banner .container .img-text .banner-img-mobile {
+    display: none;
+  }
+}
+.product-list .banner .container .img-text .banner-img-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .product-list .banner .container .img-text .banner-img-tablet {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) {
+  .product-list .banner .container .img-text .banner-img-tablet {
+    display: none;
+  }
+}
+.product-list .banner .container .img-text .banner-img-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .product-list .banner .container .img-text .banner-img-desktop {
+    display: inline;
+  }
 }
 .product-list .banner .container .img-text .banner-text-mobile {
   width: 50%;
 }
 .product-list .banner .container .img-text .banner-text-mobile p {
   text-align: right;
+  margin-bottom: 40px;
   font-family: font-futurabt;
-  font-size: 6px;
+  font-size: 12px;
   color: #888787;
 }
 .product-list .banner .container .img-text .banner-text-mobile p span {
   font-family: font-futurabt-bold;
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 13px;
   font-weight: bold;
   color: #414042;
 }
-.product-list .banner .container .messege {
+.product-list .banner .container .img-text .banner-text-mobile .messege {
   background-color: #ffffff;
   text-transform: uppercase;
   text-align: right;
   font-family: font-futurabt;
-  font-size: 7px;
-  margin-bottom: 13px;
+  font-size: 16px;
 }
 .product-list .banner .slider {
-  text-align: center;
-  margin: 0px auto;
+  text-align: right;
   width: 100%;
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 1024px) {
+  .product-list .banner .slider {
+    width: 650px;
+  }
 }
 .product-list .banner .slider .slide-prod1 {
   background-color: #fff;
