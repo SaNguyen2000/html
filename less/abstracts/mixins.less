@@ -19,7 +19,6 @@
     background-position: -47px 0;
     width: 25px;
     height: 25px;
-    // display: inline-block;
     background-size: 330px auto;
 }
 .search{
@@ -65,12 +64,16 @@
     width: 100%;
     position: absolute;
     bottom: 30px;
+    @media(min-width:1024px){
+        bottom: 60px;
+    }
         .name-shop{
+            font-family: font-footer;
             margin: 0px auto;
-            padding-top: 8px;
+            padding-top: 10px;
             padding-bottom: 10px;
             background-color: #403f41;
-            text-transform: uppercase;                                    font-family: font-main;
+            text-transform: uppercase;                                    
             color: white;
             font-size: 10pt;
             text-align: center;
@@ -78,6 +81,10 @@
             width: 250px;
             display: block;
             text-decoration: none;
+            @media(min-width:1024px){
+                width: 400px;
+                font-size: 20px;
+            }
         }
     
 }

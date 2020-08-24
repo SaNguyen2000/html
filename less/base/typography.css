@@ -38,6 +38,14 @@ body {
   src: url('../fonts/OpenSans.woff');
 }
 @font-face {
+  font-family: futura-book;
+  src: url('../fonts/futurastd-book-webfont.ttf');
+  src: url('../fonts/futurastd-book-webfont.eot');
+  src: url('../fonts/futurastd-book-webfont.svg');
+  src: url('../fonts/futurastd-book-webfont.woff');
+  font-display: swap;
+}
+@font-face {
   font-family: font-menu;
   src: url('../fonts/futurastd-light-webfont.ttf');
   src: url('../fonts/futurastd-light-webfont.eot');
