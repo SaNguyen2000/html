@@ -3,12 +3,27 @@
     .banner{
         background-color: #f3f3f3;
         .container{
+            .messege-mobile{
+                font-size: 8px;
+                @media(min-width: 1024px){
+                    display: none;
+                }
+            }
+            .messege{
+                margin-top: 10px;
+                width:100%;
+                float: right;
+                display: none;
+                @media(min-width: 1024px){
+                    display: inline;
+                }
+            }
             .messege,.messege-mobile{
                 background-color: #ffffff;
                 text-transform: uppercase;
                 text-align: right;
                 font-family: font-futurabt;
-                font-size: 16px;
+                // font-size: 16px;
             }
             .img-text{
                 display: flex;  
@@ -41,53 +56,71 @@
                         display: inline;
                     }
                 }
-                .banner-text-mobile{
+                .banner-text{
                     width: 50%;
-                    p{
+                    .banner-content{
                         text-align: right;
-                        margin-bottom: 40px;
+                        // margin-bottom: 40px;
                         span{
                             font-family: font-futurabt-bold;
                             text-transform: uppercase;
-                            font-size: 13px;
+                            font-size: 10px;
                             font-weight: bold;
                             color: #414042;
+                            @media(min-width: 768px){
+                                font-size: 15px;
+                            }
+                            @media(min-width: 1024px){
+                                font-size: 17px;
+                            }
                         }
                         font-family: font-futurabt;
-                        font-size: 12px;
+                        font-size: 8px;
                         color: #888787;
+                        @media(min-width: 768px){
+                            font-size: 13px;
+                        }
+                        @media(min-width: 1024px){
+                            font-size: 15px;
+                        }
                     }
                     
                 }
+            } 
+            .slider{
+                @media(min-width: 1024px){
+                    display: flex;
+                    .left-slider{
+                        width: 30%;
+                    }
+                    .out-slider{    
+                        width: 70%;
+                    }
+                }
             }
-            
-            
-            
         }
-        .out-silder{
+        
+        .out-slider{
             position: relative;
             .prev{
                 position: absolute;
                 left: 0px;
-                top: 50%;
+                top: 40%;
                 transform: translate(-10px, 0px);
             }
             .next{
                 position: absolute;
                 right: 0px;
-                top: 50%;
+                top: 40%;
                 transform: translate(10px, 0px);
             }
-            .slider{
+            .slider-product{
+                
                 text-align: right;
                 width: 100%;
                 display: flex;
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
-                @media (min-width:1024px){
-                    width: 75%;
-                }
-                
                 .slide-prod1{
                     background-color: #fff;
                 }
@@ -177,9 +210,9 @@
                         }
                         .img-option{
                             // display: flex;
-                            // overflow: hidden;
-                            // transition: max-height 0.3s;
-                            // max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.3s;
+                            max-height: 0;
                             a{
                                 border-top: 1px solid;
                                 margin: 10px auto;
@@ -194,7 +227,7 @@
                                     
                                     float: right;
                                     display: block;
-                                    vertical-align: middle;
+                                    // vertical-align: middle;
                                 }
                             }
                         }
