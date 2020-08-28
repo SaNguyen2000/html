@@ -397,7 +397,6 @@ header .header-logo .container .header-logo-ingredient .left-logo .menu-desktop 
 @media (min-width: 900px) {
   header .header-logo .container .header-logo-ingredient .left-logo .menu-desktop .nav-menu-desktop {
     display: inline;
-    overflow: hidden;
     display: flex;
   }
   header .header-logo .container .header-logo-ingredient .left-logo .menu-desktop .nav-menu-desktop .menu-text {
